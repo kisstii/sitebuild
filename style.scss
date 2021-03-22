@@ -1,0 +1,136 @@
+@import "./cssReset";
+@import "./variables";
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: $bgColor;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  align-items: center;
+
+  #headline {
+    margin-left: 10vw;
+    color: white;
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+  }
+
+  #hambCont {
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+    border-radius: 30px;
+    background-color: black;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.582);
+    }
+
+    #svg {
+      fill: white;
+    }
+  }
+}
+
+h2 {
+  font-size: 1.2rem;
+  color: $color1;
+  width: 100px;
+  line-height: 2.5rem;
+}
+
+#page {
+  margin: 130px 30px 0;
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 500px;
+  padding: 25px;
+  background-color: black;
+
+  #par {
+    margin-top: 25px;
+    font-size: 0.8rem;
+    line-height: 1.7rem;
+    color: white;
+  }
+}
+
+#page2 {
+  margin: 30px 30px 0;
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 500px;
+  padding: 25px;
+  background-color: white;
+
+  #par2 {
+    margin-top: 25px;
+    font-size: 0.8rem;
+    line-height: 1.7rem;
+    color: black;
+  }
+}
+#page3 {
+  margin: 30px 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 350px;
+  height: 500px;
+  padding: 25px 25px 0;
+  background-color: black;
+
+  h2 {
+    font-size: 1.2rem;
+    color: $color1;
+    width: 200px;
+    line-height: 2.5rem;
+  }
+}
+
+#readMore {
+  text-decoration: none;
+  color: $color1;
+  margin-left: 30px;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+
+  &:hover {
+    color: #445569;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  #page1,
+  #page2,
+  #page3 {
+    margin-top: 130px;
+  }
+
+  #headline {
+    margin: auto !important;
+    font-size: 3rem !important;
+  }
+}

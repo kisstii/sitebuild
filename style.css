@@ -1,0 +1,141 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #22b573;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+nav #headline {
+  margin-left: 10vw;
+  color: white;
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+}
+
+nav #hambCont {
+  position: absolute;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  margin: 20px;
+  border-radius: 30px;
+  background-color: black;
+  cursor: pointer;
+}
+
+nav #hambCont:hover {
+  background-color: rgba(0, 0, 0, 0.582);
+}
+
+nav #hambCont #svg {
+  fill: white;
+}
+
+h2 {
+  font-size: 1.2rem;
+  color: #d0973f;
+  width: 100px;
+  line-height: 2.5rem;
+}
+
+#page {
+  margin: 130px 30px 0;
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 500px;
+  padding: 25px;
+  background-color: black;
+}
+
+#page #par {
+  margin-top: 25px;
+  font-size: 0.8rem;
+  line-height: 1.7rem;
+  color: white;
+}
+
+#page2 {
+  margin: 30px 30px 0;
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 500px;
+  padding: 25px;
+  background-color: white;
+}
+
+#page2 #par2 {
+  margin-top: 25px;
+  font-size: 0.8rem;
+  line-height: 1.7rem;
+  color: black;
+}
+
+#page3 {
+  margin: 30px 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 350px;
+  height: 500px;
+  padding: 25px 25px 0;
+  background-color: black;
+}
+
+#page3 h2 {
+  font-size: 1.2rem;
+  color: #d0973f;
+  width: 200px;
+  line-height: 2.5rem;
+}
+
+#readMore {
+  text-decoration: none;
+  color: #d0973f;
+  margin-left: 30px;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+}
+
+#readMore:hover {
+  color: #445569;
+}
+
+@media (min-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  #page1,
+  #page2,
+  #page3 {
+    margin-top: 130px;
+  }
+  #headline {
+    margin: auto !important;
+    font-size: 3rem !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */
